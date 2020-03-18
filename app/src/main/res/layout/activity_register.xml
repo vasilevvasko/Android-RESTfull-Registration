@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".RegisterActivity"
+    >
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:hint="First Name"
+
+        android:id="@+id/firstNameEditText"
+        ></EditText>
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:hint="Last Name"
+        android:layout_below="@id/firstNameEditText"
+
+        android:id="@+id/lastNameEditText"
+        ></EditText>
+
+
+
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:hint="Email"
+        android:layout_below="@id/lastNameEditText"
+
+        android:id="@+id/emailEditText"
+        ></EditText>
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/emailEditText"
+        android:hint="Password"
+
+        android:id="@+id/passwordEditText"
+        ></EditText>
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/passwordEditText"
+        android:inputType="phone"
+        android:hint="Zip Code"
+
+        android:id="@+id/zipCodeEditText"
+        ></EditText>
+
+    <Spinner
+        android:layout_centerHorizontal="true"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/townSpinner"
+        android:spinnerMode="dropdown"
+        android:entries="@array/townArray"
+        android:layout_below="@id/zipCodeEditText">
+
+    </Spinner>
+
+    <Spinner
+        android:layout_centerHorizontal="true"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/accountSpinner"
+        android:spinnerMode="dropdown"
+        android:entries="@array/accountArray"
+        android:layout_below="@id/townSpinner">
+
+    </Spinner>
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/accountSpinner"
+        android:layout_marginTop="30dp"
+        android:text="Register"
+
+        android:id="@+id/RegisterButton"
+        ></Button>
+
+</RelativeLayout>
